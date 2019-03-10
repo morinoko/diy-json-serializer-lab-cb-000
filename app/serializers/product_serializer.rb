@@ -3,8 +3,8 @@ class ProductSerializer
     json = "{"
 
     json += '"name": "' + product.name + '",'
-    json += '"price": "' + product.price + '",'
-    json += '"inventory": "' + product.inventory + '",'
+    json += '"price": "' + product.price.to_s + '",'
+    json += '"inventory": ' + product.inventory + ','
     json += '"description": "' + product.description + '"'
 
     json += "}"
